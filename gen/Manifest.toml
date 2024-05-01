@@ -2,7 +2,7 @@
 
 julia_version = "1.10.2"
 manifest_format = "2.0"
-project_hash = "75d66019fe710b4088cc7c925c09d74b79a89b5a"
+project_hash = "1f0758db37f2802bf5bcbf631405143a795af3cb"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
@@ -81,6 +81,12 @@ deps = ["Artifacts", "Preferences"]
 git-tree-sha1 = "7e5d6779a1e09a36db2a7b6cff50942a0a7d0fca"
 uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
 version = "1.5.0"
+
+[[deps.LibAwsCommon]]
+deps = ["CEnum", "aws_c_common_jll"]
+git-tree-sha1 = "d8705f05415a487369d5bbfb2ca149c72ffb5609"
+uuid = "c6e421ba-b5f8-4792-a1c4-42948de3ed9d"
+version = "1.0.0"
 
 [[deps.LibCURL]]
 deps = ["LibCURL_jll", "MozillaCACerts_jll"]
