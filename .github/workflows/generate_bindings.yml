@@ -16,7 +16,7 @@ env:
   JLL_NAME: "aws_c_compression_jll"
 
 jobs:
-  update-aws-package:
+  update-awscompression-package:
     runs-on: ubuntu-latest
     
     steps:
@@ -103,4 +103,4 @@ jobs:
               - ${{ env.bindings_changed == 'true' && '✅ Updated bindings' || '⚠️ No bindings changes detected' }}
 
           reviewers: quinnj, Octogonapus
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ORG_PAT }}
