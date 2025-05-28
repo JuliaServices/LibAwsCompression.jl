@@ -1,6 +1,6 @@
 name = "LibAwsCompression"
 uuid = "51c8708f-2dd9-446d-a0d4-ba9f49ba4b23"
-version = "1.1.1"
+version = "1.1.2"
 
 [deps]
 CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -11,7 +11,7 @@ aws_c_compression_jll = "73a04cd5-f3d7-5bac-9290-e8adb709f224"
 Aqua = "0.7"
 CEnum = "0.5"
 LibAwsCommon = "1.2"
-aws_c_compression_jll = "=0.3.1"
+aws_c_compression_jll = "=0.3.2"
 julia = "1.6"
 
 [extras]
