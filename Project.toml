@@ -8,7 +8,7 @@ LibAwsCommon = "c6e421ba-b5f8-4792-a1c4-42948de3ed9d"
 aws_c_compression_jll = "73a04cd5-f3d7-5bac-9290-e8adb709f224"
 
 [compat]
-Aqua = "0.7"
+Aqua = "0.7,0.8"
 CEnum = "0.5"
 LibAwsCommon = "1.2"
 aws_c_compression_jll = "=0.3.2"
