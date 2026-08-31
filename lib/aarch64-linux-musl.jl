@@ -1,4 +1,4 @@
-using CEnum
+using CEnum: CEnum, @cenum
 
 """
     aws_compression_error
@@ -65,7 +65,7 @@ const aws_huffman_symbol_encoder_fn = Cvoid
 Function used to decode a code into a symbol
 
 # Arguments
-* `bits`:\\[in\\] The bits to attept to decode a symbol from
+* `bits`:\\[in\\] The bits to attempt to decode a symbol from
 * `symbol`:\\[out\\] The symbol found. Do not write to if no valid symbol found
 * `userdata`:\\[in\\] Optional userdata ([`aws_huffman_symbol_coder`](@ref).userdata)
 # Returns
@@ -110,7 +110,7 @@ end
 """
     aws_huffman_encoder_init(encoder, coder)
 
-Initialize a encoder object with a symbol coder.
+Initialize an encoder object with a symbol coder.
 
 ### Prototype
 ```c
@@ -124,7 +124,7 @@ end
 """
     aws_huffman_encoder_reset(encoder)
 
-Resets a decoder for use with a new binary stream
+Resets an encoder for use with a new binary stream
 
 ### Prototype
 ```c
@@ -212,7 +212,7 @@ Decodes a byte buffer into the provided symbol array.
 * `to_decode`:\\[in\\] The encoded byte buffer to read from
 * `output`:\\[in\\] The buffer to write decoded symbols to. If decoder is set to allow growth, capacity will be increased when necessary.
 # Returns
-AWS\\_OP\\_SUCCESS if encoding is successful, AWS\\_OP\\_ERR otherwise
+AWS\\_OP\\_SUCCESS if decoding is successful, AWS\\_OP\\_ERR otherwise
 ### Prototype
 ```c
 int aws_huffman_decode( struct aws_huffman_decoder *decoder, struct aws_byte_cursor *to_decode, struct aws_byte_buf *output);
